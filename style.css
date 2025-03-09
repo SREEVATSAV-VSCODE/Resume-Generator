@@ -1,0 +1,31 @@
+.container{
+    background-color: greenyellow;
+    color:rgb(255, 0, 153);
+}
+input{
+    background-color: rgb(185, 138, 255);
+    color:rgb(0,0,0);
+}
+input::placeholder{
+    color:black;
+}
+form{
+    background-color: white;
+    width: 30%;
+    height:auto;
+    border-radius: 2em;
+}
+button{
+    background-color: #9ACD32 ;
+    color:rgb(255, 255, 255);
+    border-radius: 9em;
+}
+button:hover{
+    background-color: #8A2BE2 ;
+    color:rgb(255, 255, 255);
+    border-radius: 9em;
+}
+p{
+    align-self: center;
+    font-weight: 1000;
+}
