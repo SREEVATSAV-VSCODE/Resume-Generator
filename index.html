@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resume Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .container {
+                background-color: greenyellow;
+                color: rgb(255, 0, 153);
+            }
+            input {
+                background-color: rgb(185, 138, 255);
+                color: rgb(0, 0, 0);
+            }
+            input::placeholder {
+                color: black;
+            }
+            form {
+                background-color: white;
+                width: 30%;
+                height: auto;
+                border-radius: 2em;
+            }
+            button {
+                background-color: #9ACD32;
+                color: rgb(255, 255, 255);
+                border-radius: 9em;
+            }
+            button:hover {
+                background-color: #8A2BE2;
+                color: rgb(255, 255, 255);
+                border-radius: 9em;
+            }
+            p {
+                align-self: center;
+                font-weight: 1000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container"><br>
+            <center>
+                <form action="/" method="POST">
+                    <h1>RESUME GENERATOR</h1>
+                    <table class="form-table">
+                        <tr>
+                            <td><p>Name</p></td>
+                            <td><input type="text" class="Name" id="Name" name="Name" placeholder="Enter your full name" required></td>
+                        </tr>
+                        <tr>
+                            <td><p>S/o</p></td>
+                            <td><input type="text" class="son" id="son" name="S/o" placeholder="Enter father’s name" required></td>
+                        </tr>
+                        <tr>
+                            <td><p>Address</p></td>
+                            <td><input type="text" class="Address" id="Address" name="Address" placeholder="Enter your address" required></td>
+                        </tr>
+                        <tr>
+                            <td><p>Email</p></td>
+                            <td><input type="email" class="Email" id="Email" name="Email" placeholder="Enter your email" required></td>
+                        </tr>
+                        <tr>
+                            <td><p>Phone number</p></td>
+                            <td><input type="tel" class="phone" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[\+]?[0-9]{1,4}?[-\s]?[0-9]{1,10}"></td>
+                        </tr>
+                        <tr>
+                            <td><p>Educational Qualifications</p></td>
+                            <td><input type="text" class="Education" id="Education" name="Education" placeholder="Your highest qualification" required></td>
+                        </tr>
+                        <tr>
+                            <td><p>Skills</p></td>
+                            <td><input type="text" class="Skills" id="Skills" name="Skills" placeholder="Enter your skills" required></td>
+                        </tr>
+                        <tr>
+                            <td><p>Experience</p></td>
+                            <td><input type="text" class="Experience" id="Experience" name="Experience" placeholder="Enter your work experience" required></td>
+                        </tr>
+                        <tr>
+                            <td><p>Hobbies</p></td>
+                            <td><input type="text" class="Hobbies" id="Hobbies" name="Hobbies" placeholder="Enter your hobbies" required></td>
+                        </tr>
+                        <tr>
+                            <td><p>Languages known (can speak)</p></td>
+                            <td><input type="text" class="lks" id="lks" name="lks" placeholder="Languages you can speak" required></td>
+                        </tr>
+                        <tr>
+                            <td><p>Languages known (can write)</p></td>
+                            <td><input type="text" class="lkw" id="lkw" name="lkw" placeholder="Languages you can write" required></td>
+                        </tr>
+                    </table>
+                    <button type="submit" class="submit" id="submit">Create</button><br><br>
+                </form>
+            </center><br><br>
+        </div>
+    </body>
+</html>

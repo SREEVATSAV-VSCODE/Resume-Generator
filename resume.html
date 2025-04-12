@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resume Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            r{
+                background-color: rgb(185, 138, 255);
+                color: rgb(0, 0, 0);
+            }
+            .container {
+                background-color: greenyellow;
+                color: rgb(255, 0, 153);
+            }
+            input {
+                background-color: rgb(185, 138, 255);
+                color: rgb(0, 0, 0);
+            }
+            input::placeholder {
+                color: black;
+            }
+            form {
+                background-color: white;
+                width: 30%;
+                height: auto;
+                border-radius: 2em;
+            }
+            button {
+                background-color: #9ACD32;
+                color: rgb(255, 255, 255);
+                border-radius: 9em;
+            }
+            button:hover {
+                background-color: #8A2BE2;
+                color: rgb(255, 255, 255);
+                border-radius: 9em;
+            }
+            p {
+                align-self: center;
+                font-weight: 1000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container"><br>
+            <center>
+                    <h1>RESUME</h1>
+                    <table class="form-table">
+                        <tr>
+                            <td><p>Name</p></td>
+                            <td><r>{{ name }}</r></td>
+                        </tr>
+                        <tr>
+                            <td><p>S/o</p></td>
+                            <td><r>{{ S }}</r></td>
+                        </tr>
+                        <tr>
+                            <td><p>Address</p></td>
+                            <td><r>{{ Address }}</r></td>
+                        </tr>
+                        <tr>
+                            <td><p>Email</p></td>
+                            <td><r>{{ Email }}</r></td>
+                        </tr>
+                        <tr>
+                            <td><p>Phone number</p></td>
+                            <td><r>{{ Phone_number }}</r></td>
+                        </tr>
+                        <tr>
+                            <td><p>Educational Qualifications</p></td>
+                            <td><r>{{ EQ }}</r></td>
+                        </tr>
+                        <tr>
+                            <td><p>Skills</p></td>
+                            <td><r>{{ Skills }}</r></td>
+                        </tr>
+                        <tr>
+                            <td><p>Experience</p></td>
+                            <td><r>{{ Experience }}</r></td>
+                        </tr>
+                        <tr>
+                            <td><p>Hobbies</p></td>
+                            <td><r>{{ Hobbies }}</r></td>
+                        </tr>
+                        <tr>
+                            <td><p>Languages known (can speak)</p></td>
+                            <td><r>{{ LCS }}</r></td>
+                        </tr>
+                        <tr>
+                            <td><p>Languages known (can write)</p></td>
+                            <td><r>{{ LCW }}</r></td>
+                        </tr>
+                    </table>
+            </center>
+        </div>
+    </body>
+</html>
